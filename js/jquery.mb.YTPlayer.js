@@ -296,20 +296,27 @@ function onYouTubePlayerAPIReady() {
 					jQuery(document).on("getVideoInfo_" + YTPlayer.opt.id, function () {
 
 						if(ytp.isDevice && !YTPlayer.isBackground){
-							new YT.Player(playerID, {
-								height: '100%',
-								width: '100%',
-								videoId: YTPlayer.videoID,
-								events: {
-									'onReady': function(){
-										$YTPlayer.optimizeDisplay();
-										playerBox.css({opacity: 1});
-										YTPlayer.wrapper.css({opacity: 1});
-										$YTPlayer.optimizeDisplay();
-									},
-									'onStateChange': function(){}
-								}
-							});
+                            
+                            //JB 20160111 prevent video running on mobile devices if data-attribute 'data-dontPlayOnMobile' is true
+                            var dontPlayOnMobile = $(YTPlayer).attr('data-dontPlayOnMobile');
+                            
+                            if(!dontPlayOnMobile){
+                                
+                                new YT.Player(playerID, {
+                                    height: '100%',
+                                    width: '100%',
+                                    videoId: YTPlayer.videoID,
+                                    events: {
+                                        'onReady': function(){
+                                            $YTPlayer.optimizeDisplay();
+                                            playerBox.css({opacity: 1});
+                                            YTPlayer.wrapper.css({opacity: 1});
+                                            $YTPlayer.optimizeDisplay();
+                                        },
+                                        'onStateChange': function(){}
+                                    }
+                                });
+                            }
 							return;
 						}
 
