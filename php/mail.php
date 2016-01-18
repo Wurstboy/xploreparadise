@@ -20,11 +20,11 @@ require("class.phpmailer.php");
 
 $mail = new PHPMailer();
 
-$mail->IsSMTP();                                 		 // send via SMTP
-$mail->Host     = "smtp.domain.com"; 					 // SMTP server
-$mail->SMTPAuth = true;    								 // turn on SMTP authentication
-$mail->Username = "no-reply@domain.com"; 			     // SMTP username
-$mail->Password = "secret";								 // Password
+//$mail->IsSMTP();                                 		 // send via SMTP
+//$mail->Host     = "smtp.domain.com"; 					 // SMTP server
+//$mail->SMTPAuth = true;    								 // turn on SMTP authentication
+//$mail->Username = "no-reply@domain.com"; 			     // SMTP username
+//$mail->Password = "secret";								 // Password
 
 $mail->From     = "contact-form@xploreparadise.com";				 // SMTP username again
 $mail->AddAddress("info@xploreparadise.com");			  	 // Your Adress
