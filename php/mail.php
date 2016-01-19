@@ -27,6 +27,7 @@ $mail = new PHPMailer();
 //$mail->Password = "secret";								 // Password
 
 $mail->From     = "contact-form@xploreparadise.com";				 // SMTP username again
+//$mail->AddAddress("jonas.buechel@movento.com");			  	 // Your Adress
 $mail->AddAddress("info@xploreparadise.com");			  	 // Your Adress
 $mail->Subject  =  "New email from xploreparadise.com contact-form";
 $mail->IsHTML(true);  
