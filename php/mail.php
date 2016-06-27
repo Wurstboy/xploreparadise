@@ -20,15 +20,16 @@ require("class.phpmailer.php");
 
 $mail = new PHPMailer();
 
-$mail->IsSMTP();                                 		 // send via SMTP
-$mail->Host     = "smtp.domain.com"; 					 // SMTP server
-$mail->SMTPAuth = true;    								 // turn on SMTP authentication
-$mail->Username = "no-reply@domain.com"; 			     // SMTP username
-$mail->Password = "secret";								 // Password
+//$mail->IsSMTP();                                 		 // send via SMTP
+//$mail->Host     = "smtp.domain.com"; 					 // SMTP server
+//$mail->SMTPAuth = true;    								 // turn on SMTP authentication
+//$mail->Username = "no-reply@domain.com"; 			     // SMTP username
+//$mail->Password = "secret";								 // Password
 
-$mail->From     = "no-reply@domain.com";				 // SMTP username again
-$mail->AddAddress("your-email@domain.com");			  	 // Your Adress
-$mail->Subject  =  "New mail from NORTH !";
+$mail->From     = $email;				 // SMTP username again
+//$mail->AddAddress("jonas.buechel@movento.com");			  	 // Your Adress
+$mail->AddAddress("info@xploreparadise.com");			  	 // Your Adress
+$mail->Subject  =  "New email from xploreparadise.com contact-form";
 $mail->IsHTML(true);  
 $mail->CharSet = 'UTF-8';
 $mail->Body     =  "<p>You have recieved a new message from the enquiries form on your website.</p>
