@@ -44,6 +44,11 @@
 /* MAX 1150px */
 
 	@media only screen and (max-width: 1150px){
+		/* Home Texts V2 */
+		.home-inner.v2 .text-slider .home-texts .slide{
+			font-size:40px;
+			line-height: 40px;
+		}
 
 		/* Features */
 		#features ul.features-mobile{
@@ -94,11 +99,6 @@
 			margin-top:10px;
 		}
 
-		/* Home Texts V2 */
-		.home-inner.v2 .text-slider .home-texts .slide{
-			font-size:40px;
-			line-height: 40px;
-		}
 
 		.home-inner.v2 .home-fixed-text{
 			font-size:18px;
@@ -147,6 +147,20 @@
 		/* Navigation */
 		.nav-inner div.nav-menu{
 			display: block !important;
+		}
+
+		.split-screen{
+			float:left;
+			width: 50% !important;
+			height: 100% !important;
+		}
+
+		.split-screen--second{
+			border-left: 1px solid #eeeeee;
+		}
+
+		.image-bg--split-screen{
+			height: 100vh !important;
 		}
 
 	}

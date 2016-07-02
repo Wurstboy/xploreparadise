@@ -1119,6 +1119,11 @@
 		background-size:cover;
 	}
 
+	.image-bg.livingstone-trails{
+		background-image:url(../images/slide_pre_livingstone-trails.jpg);
+	}
+
+
 	body.parallax .image-bg{
 		background-attachment: fixed;
 	}
@@ -1175,8 +1180,8 @@
 /* Home Text Slider v2 */
 
 	.home-inner.v2 .text-slider .home-texts .slide{
-		font-size:78px;
-		line-height: 80px;
+		font-size:50px;
+		line-height: 52px;
 	}
 
 	.home-inner.v2 .home-fixed-text{
@@ -1330,7 +1335,27 @@
 		opacity: 1;
 	}
 
+/* SPLIT SCREEN */
+
+.split-screen{
+	position: relative;
+	width: 100% !important;
+	height: 50vh !important;
+}
+
+.image-bg--split-screen{
+	height: 50vh !important;
+}
+
+
+
 /* Home Buttons */
+
+	.home-elements{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 
 	.home-elements div.home-button-inner{
 		bottom:17%;

@@ -122,16 +122,13 @@ src="https://www.facebook.com/tr?id=1075107762510389&ev=PageView&noscript=1"
 	<!-- Home -->
 	<section id="home" class="container relative">
 
-		<!-- Ful Screen Home -->
-		<div id="fullscreen" class="image-bg">
-			<!-- Video -->
-			<div id="P2" class="player video-container" data-dontPlayOnMobile="true" data-property="{videoURL:'iyEnDUagjmY',containment:'#fullscreen',autoPlay:true, showControls:true, mute:false, startAt:0, opacity:1}"></div>
-			<!-- End Video -->
-		</div>
-		<!-- End Ful Screen Home -->
-
-		<!-- Home Elements v2 -->
-		<div class="home-elements">
+		<div class="split-screen split-screen--first">
+            <div id="fullscreen" class="image-bg image-bg--split-screen">
+                <!-- Video -->
+                <div id="P2" class="player video-container" data-dontPlayOnMobile="true" data-property="{videoURL:'iyEnDUagjmY',containment:'#fullscreen',autoPlay:true, showControls:true, mute:false, startAt:0, opacity:1}"></div>
+                <!-- End Video -->
+            </div>
+            <div class="home-elements">
 			<!-- Home Inner -->
 			<div class="home-inner v2 t-center">
 				
@@ -162,7 +159,33 @@ src="https://www.facebook.com/tr?id=1075107762510389&ev=PageView&noscript=1"
 					start
 				</a>
 			</div><!-- End Home Inner -->
-		</div><!-- End Home Elements -->
+		</div>
+        </div>
+        <div class="split-screen split-screen--second">
+            <div class="image-bg image-bg--parallax-slow image-bg--split-screen livingstone-trails">
+                <div class="home-elements">
+                    <!-- Home Inner -->
+                    <div class="home-inner v2 t-center">
+
+                        <!-- Home Text Slider -->
+                        <div class="home-text-slider relative">
+                            <div class="text-slider clearfix">
+                                <!-- Home Text Slides -->
+                                <ul class="home-texts clearfix t-center semibold">
+                                    <li class="slide white uppercase">#xploreparadise</li>
+                                    <li class="slide white uppercase">#xplorewithme</li>
+                                    <li class="slide white uppercase">#livingstonetrails</li>
+                                    <!--<li class="slide white uppercase">we love to designing</li>-->
+                                </ul>
+                                <!-- End Home Text Slides -->
+                                <!-- Home Fixed Text -->
+                                <h1 class="home-fixed-text t-center">Comming soon</h1>
+                            </div>
+                        </div>
+                    </div><!-- End Home Inner -->
+                </div>
+            </div>
+        </div>
 	</section><!-- End Home Section -->
 
 

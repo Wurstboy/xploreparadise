@@ -536,6 +536,7 @@ PARALLAX CALLING
 					$('body.parallax .image10').parallax("100%", 0.5);
 					$('body.parallax .image11').parallax("100%", 0.5);
 					$('body.parallax .image-bg').parallax("50%", 0.5);
+					$('body.parallax .image-bg.image-bg--parallax-slow').parallax("50%", 0.5);
 					$('body.parallax .parallax').parallax("-50%", 0.3);
 					$('body.parallax .parallax1').parallax("50%", 0.5);
 					$('body.parallax .parallax2').parallax("50%", 0.5);
