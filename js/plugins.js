@@ -711,3 +711,45 @@ MOBILE NAV BUTTON
 			$(".nav-menu").slideToggle("2000")
 		}
 	});
+
+/* ==============================================
+ ALIGN HOME-TEXTS
+ =============================================== */
+
+var alignHomeTextsItems = $('.split-screen .text-slider');
+
+var alignHomeTexts = function(itemsToAlign){
+	
+	var masterItem 	= $(itemsToAlign[0]);
+	var slaveItem 	= $(itemsToAlign[1]);
+
+	var isMobile = function(){
+		var windowWith = parseInt(window.innerWidth, 10);
+		return windowWith < 1000 ? true : false;
+	};
+
+	var getOffsetDifference = function(item1, item2){
+		return item2.offset().top - item1.offset().top;
+	};
+
+	if(!isMobile()){
+
+		var offsetDifference = getOffsetDifference(masterItem, slaveItem);
+
+		if(offsetDifference > 2){ //2px tolerance
+			slaveItem.css('position','relative');
+			slaveItem.css('top', offsetDifference * -1);
+		}
+	}else{
+		slaveItem.removeAttr('style');
+	};
+
+};
+
+$(window).load(function(){
+	alignHomeTexts(alignHomeTextsItems);
+});
+
+$(window).resize(function(){
+	alignHomeTexts(alignHomeTextsItems);
+});
