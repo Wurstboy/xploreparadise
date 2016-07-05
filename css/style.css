@@ -1345,6 +1345,7 @@
 /* SPLIT SCREEN */
 
 .split-screen{
+	display: block;
 	position: relative;
 	width: 100% !important;
 	height: 50vh !important;
