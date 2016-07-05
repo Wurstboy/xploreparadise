@@ -1119,9 +1119,16 @@
 		background-size:cover;
 	}
 
-	.image-bg.livingstone-trails{
-		background-image:url(../images/slide_pre_livingstone-trails.jpg);
+	/* MOBILE IMAGES */
+	.image-bg--split-screen.okavango-delta{
+		background-attachment: initial !important;
+		background-image:url(../images/img_cover_01_xpp_small.jpg);
 	}
+	.image-bg--split-screen.livingstone-trails{
+		background-attachment: initial !important;
+		background-image:url(../images/img_cover_02_xpp_small.jpg);
+	}
+
 
 
 	body.parallax .image-bg{

@@ -163,6 +163,14 @@
 			height: 100vh !important;
 		}
 
+		/* DESKTOP IMAGES */
+		.image-bg--split-screen.okavango-delta{
+			background-image:url(../images/img_cover_01_xpp_large.jpg);
+		}
+		.image-bg--split-screen.livingstone-trails{
+			background-image:url(../images/img_cover_02_xpp_large.jpg);
+		}
+
 	}
 
 /* MAX 1000px */
