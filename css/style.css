@@ -1415,6 +1415,10 @@
 		border:1px solid rgba(255,255,255,0);
 	}
 
+    .home-button-1--brown:hover{
+        background:rgba(134, 70, 10, 0.7);
+    }
+
 /* Super Slides Navigation */
 
 	.slides-navigation {
