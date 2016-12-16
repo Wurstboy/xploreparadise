@@ -1,4 +1,7 @@
 <?
+header("Access-Control-Allow-Origin: *");
+header('Content-Type: text/html');
+
 require("class.phpmailer.php");
 
 
@@ -46,7 +49,7 @@ if(!$mail->Send())
    exit;
 }
 
-echo "Mail Sent";
+echo '{"message":"Mail Sent"}';
 
 
 ?>
