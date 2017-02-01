@@ -1,4 +1,10 @@
 <?
+
+//---------------------------------------------------------------------------------------------------------------------------
+// ATTENTION: THIS SCRIPT WON'T WORK WITH PHP 7.x, USE 5.6 INSTEAD
+// GREEN.CH SHARED HOSTING REQUIRES A VALID E-MAIL-ADDRESS FOR SENDER AND RECEIVER (SAME!) OF THE CURRENT DOMAIN
+//---------------------------------------------------------------------------------------------------------------------------
+
 header("Access-Control-Allow-Origin: *");
 header('Content-Type: text/html');
 
@@ -29,8 +35,7 @@ $mail = new PHPMailer();
 //$mail->Username = "no-reply@domain.com"; 			     // SMTP username
 //$mail->Password = "secret";								 // Password
 
-$mail->From     = $email;				 // SMTP username again
-//$mail->AddAddress("jonas.buechel@movento.com");			  	 // Your Adress
+$mail->From     = "info@xploreparadise.com";				 // SMTP username again
 $mail->AddAddress("info@xploreparadise.com");			  	 // Your Adress
 $mail->Subject  =  "New email from xploreparadise.com contact-form";
 $mail->IsHTML(true);  
